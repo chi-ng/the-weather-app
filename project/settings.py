@@ -134,3 +134,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 INTERNAL_IPS = ['127.0.0.1']
+
+
+
+
+# Configure Django App for Heroku.
+import django_on_heroku
+django_on_heroku.settings(locals())
